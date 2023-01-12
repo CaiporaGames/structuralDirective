@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'structuralDirective';
+  counter = 0;
+  condition:boolean = false;
+
+  updateCounter() {
+    this.counter += 1;
+    this.condition = !this.condition;
+  }
 }
